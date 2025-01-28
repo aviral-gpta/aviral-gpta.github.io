@@ -1,11 +1,200 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Test Website</title>
-</head>
-<body>
-    <h1>Welcome to my test website</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Aviral Gupta</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="nav-container">
+        <div class="brand">
+          <a href="#">Aviral Gupta</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Technical Skills</a></li>
+          <li><a href="#experience">Work Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#awards">Awards</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Top Section (Photo, Description, and Contact) -->
+    <section class="top-section">
+      <div class="top-container">
+        <div class="photo-area">
+          <!-- Replace 'images/profile.jpg' with your actual photo path -->
+          <img src="images/profile.jpg" alt="Profile Photo" class="profile-photo" />
+        </div>
+        <div class="intro-area">
+          <h1>Aviral Gupta</h1>
+          <p>
+            I am a masters student in the ECE department of University of California San Diego with a focus on Intelligent Systems, Robotics and Control. I am currently a part of the <a href= "http://erl.ucsd.edu/">Existential Robotics Lab</a> under Prof. Nikolay Atanasov and am currently working on adaptive control for quadrotors using Neural Differential Equations.
+            I received my Bachelor's degree in Engineering Physics from IIT Delhi, where I was a part of the Formula Student team and worked with various professors on embedded systems, computer vision and control.
+          </p>
+          <p>
+            My goal is to contribute to the development of autonomous and safe mobile robots. My research interests lie in localization, modelling and control of robots.
+        </p>
+          <div class="contact-info">
+            <p> <a href="mailto:aviralg520@gmail.com">Email</a> | <a href="https://www.linkedin.com/in/aviralgpta/" target="_blank">LinkedIn</a> | <a href="https://drive.google.com/file/d/17lu8KnCIBNYJvkDSi8bpYgRYrsAU2soK/view?usp=sharing" target="_blank">Resume</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <div class="edu-container">
+        <div class="edu-item">
+          <h3>University of California San Diego</h3>
+          <p>2024 - 2026<br/>
+            MS in Electrical and Computer Engineering (Intelligent Systems, Robotics and Control)<br/>
+            GPA: 3.5/4
+          </p>
+          <p>
+            Relevant Coursework:
+            Statistical Learning 1, Linear Systems Theory, Sensing and Estimation in Robotics, 
+            Linear Algebra and Applications, GPU Programming
+          </p>
+        </div>
+        <div class="edu-item">
+          <h3>Indian Institute of Technology Delhi</h3>
+          <p>2020 - 2024<br/>
+            Bachelor of Technology in Engineering Physics<br/>
+            GPA: 8.08/10
+          </p>
+          <p>
+            Relevant Coursework:
+            Robotics Technology, Embedded Systems, Computer Vision, Introduction to Soft Robotics
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section id="skills" class="section">
+      <h2>Technical Skills</h2>
+      <ul class="skills-list">
+        <li>
+          Languages/Software: C++, Python, Java, Altium Designer, 
+          LTSpice, COMSOL Multiphysics, Autodesk Inventor
+        </li>
+        <li>
+          Frameworks/Libraries: MATLAB, Simulink, ROS, CUDA, Git, 
+          PyTorch, NumPy, SciPy, OpenCV, matplotlib
+        </li>
+      </ul>
+    </section>
+
+    <!-- Work Experience -->
+    <section id="experience" class="section">
+      <h2>Work Experience</h2>
+      <div class="exp-item">
+        <h3>Computing Systems Research Intern</h3>
+        <p>Tata Consultancy Services Research, Mumbai (Jun 2023 - Jul 2023)</p>
+        <ul>
+          <li>
+            Developed a JSON-based graph representation framework to represent HPC cluster hardware architectures
+          </li>
+          <li>
+            Explored capabilities and limitations of large language models in hardware-focused performance comparisons
+          </li>
+          <li>
+            Identified prompting biases and mitigated them using chain-of-thought and few-shot prompting
+          </li>
+        </ul>
+      </div>
+      <div class="exp-item">
+        <h3>Robotics Instructor Intern</h3>
+        <p>Ranchovation Labs, New Delhi (Jun 2022 - Jul 2022)</p>
+        <ul>
+          <li>
+            Designed and taught a Robotics course covering C++, Arduino, sensors, and actuators to high school students
+          </li>
+          <li>
+            Mentored various projects including BLE beacon-based positioning and IoT-based prototypes
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="project-item">
+        <h3>Autonomous Waypoint Following Quadcopter</h3>
+        <p>(Oct 2024 - Present)</p>
+        <ul>
+          <li>Implementing neural controlled differential equation-based control and comparing with traditional controllers</li>
+          <li>Integrated ROS-based geometric controller with a Raspberry Pi-powered quadcopter for waypoint navigation</li>
+        </ul>
+      </div>
+      <div class="project-item">
+        <h3>Semiconductor Device Simulation</h3>
+        <p>(May 2023 - May 2024)</p>
+        <ul>
+          <li>Simulated planar epitaxial SPAD structures to enhance photon detection efficiency in near-IR</li>
+          <li>Observed breakdown behavior changes in P-N Diodes and MOSFETs using TCAD tools</li>
+        </ul>
+      </div>
+      <div class="project-item">
+        <h3>Handwriting Digitization Using Inertial Data</h3>
+        <p>(Aug 2023 - Nov 2023)</p>
+        <ul>
+          <li>Developed embedded software for collecting and transmitting IMU data at 200 Hz over Wi-Fi using ESP32</li>
+          <li>Optimized latency using interrupts for efficient data processing</li>
+        </ul>
+      </div>
+      <div class="project-item">
+        <h3>Projects in Computer Vision</h3>
+        <p>(Feb 2023 - Apr 2023)</p>
+        <ul>
+          <li>Calibrated camera using Aruco markers to add a virtual cube stationary in world coordinates</li>
+          <li>Created image panoramas using Hessian features and SSD point correlation</li>
+        </ul>
+      </div>
+      <div class="project-item">
+        <h3>Indigenous Smart Autonomous Drones</h3>
+        <p>(Jul 2022 - Oct 2022)</p>
+        <ul>
+          <li>Designed quadcopter frame, power distribution PCB, and integrated ESP32 with peripherals</li>
+          <li>Implemented Wi-Fi commands, data logging, and PID tuning for stable flight</li>
+        </ul>
+      </div>
+      <div class="project-item">
+        <h3>Data Acquisition & Electronics of an EV</h3>
+        <p>(May 2021 - May 2022)</p>
+        <ul>
+          <li>Integrated sensors with STM32 ECU for on-board data acquisition and live data telemetry</li>
+          <li>Designed and fabricated digital electronic PCBs to ensure EV safety and performance</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Awards and Certifications -->
+    <section id="awards" class="section">
+      <h2>Certifications and Awards</h2>
+      <ul>
+        <li>National Talent Search Examination (NTSE) scholarship</li>
+        <li>99.5 percentile in JEE Mains 2020 and rank 2081 in JEE Advanced 2020</li>
+        <li>Completed Robotics: Aerial Robotics and Robotics: Perception courses (Coursera)</li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Aviral Gupta. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
